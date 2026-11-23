@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="ropa, moda, CSHOP, estilo, accesorios, tendencias, ropa urbana, asesoría de estilo, outfit, ropa para hombre, ropa para mujer, tienda de ropa">
+    <meta name="description" content="CSHOP - Ropa y complementos">
+    <meta name="author" content="CSHOP">
+    <title>CSHOP - Ropa y complementos</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="CSHOP - Ropa y complementos">
+    <meta property="og:description" content="Explora nuestra línea de ropa y complementos con CSHOP. Recibe asesoría personalizada para destacar en cada ocasión.">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tu_usuario_de_twitter">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/png">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap y librerías CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo_cuadricula_mejorado.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/presupuesto.css">
+
+    <!-- Iconos y manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.ico">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="navbar-block">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">CSHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Menú de navegación principal -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="views/productos.html" id="productosDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                  <li><a class="dropdown-item" href="views/productos.html">Todos los productos</a></li>
+                  <li><a class="dropdown-item" href="views/productos.html#ropa">Ropa</a></li>
+                  <li><a class="dropdown-item" href="views/productos.html#zapatos">Zapatos</a></li>
+                  <li><a class="dropdown-item" href="views/productos.html#accesorios">Accesorios</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="views/presupuesto.html">Presupuesto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="views/contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <!-- Buscador -->
+            <form class="d-flex me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+
+            <!-- Selector de Idiomas con Bandera -->
+            <div class="d-flex align-items-center gap-3">
+              <!-- Español -->
+              <div class="language-option d-inline-flex align-items-center gap-1">
+                <a
+                  href="https://translate.google.com/?sl=en&tl=es&text=Hello"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Traducir al Español"
+                >
+                  <img
+                    src="https://flagsapi.com/ES/flat/24.png"
+                    alt="Español"
+                    width="24"
+                    height="24"
+                  >
+                </a>
+                <small class="text-light">Español</small>
+              </div>
+
+              <!-- Inglés -->
+              <div class="language-option d-inline-flex align-items-center gap-1">
+                <a
+                  href="https://translate.google.com/?sl=es&tl=en&text=Hola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Translate to English"
+                >
+                  <img
+                    src="https://flagsapi.com/US/flat/24.png"
+                    alt="English"
+                    width="24"
+                    height="24"
+                  >
+                </a>
+                <small class="text-light">English</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. Carrusel de imágenes (5 imágenes) -->
+      <section aria-label="Carrusel promocional CSHOP" class="mb-5">
+        <div id="carouselCSHOP" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCSHOP" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1: Novedades de Temporada"></button>
+            <button type="button" data-bs-target="#carouselCSHOP" data-bs-slide-to="1" aria-label="Diapositiva 2: Especial Ropa"></button>
+            <button type="button" data-bs-target="#carouselCSHOP" data-bs-slide-to="2" aria-label="Diapositiva 3: Zapatos Destacados"></button>
+            <button type="button" data-bs-target="#carouselCSHOP" data-bs-slide-to="3" aria-label="Diapositiva 4: Accesorios Clave"></button>
+            <button type="button" data-bs-target="#carouselCSHOP" data-bs-slide-to="4" aria-label="Diapositiva 5: Presupuesto Rápido"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Slide 1: Novedades -->
+            <div class="carousel-item active">
+              <img src="images/slide1.png" class="d-block w-100 cshop-slide-img" alt="Novedades de temporada en ropa y complementos CSHOP" width="1584" height="672">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                <h1 class="h2">Novedades de Temporada en CSHOP</h1>
+                <p>Descubre los últimos lanzamientos urbanos recién llegados al catálogo.</p>
+                <a href="views/productos.html" class="btn btn-light btn-sm fw-semibold">Ver novedades</a>
+              </div>
+            </div>
+
+            <!-- Slide 2: Ropa -->
+            <div class="carousel-item">
+              <img src="images/slide2.png" class="d-block w-100 cshop-slide-img" alt="Selección promocional de ropa CSHOP" width="1584" height="672">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                <h2>Especial Ropa: Looks Listos para Estrenar</h2>
+                <p>Combina tus prendas favoritas y renueva tu armario esta temporada.</p>
+                <a href="views/productos.html#ropa" class="btn btn-light btn-sm fw-semibold">Ver Ropa</a>
+              </div>
+            </div>
+
+            <!-- Slide 3: Zapatos -->
+            <div class="carousel-item">
+              <img src="images/slide3.png" class="d-block w-100 cshop-slide-img" alt="Zapatos destacados de la colección CSHOP" width="1584" height="672">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                <h2>Zapatos Destacados: Estilo y Comodidad</h2>
+                <p>Modelos seleccionados para acompañarte cada día con el mejor ajuste.</p>
+                <a href="views/productos.html#zapatos" class="btn btn-light btn-sm fw-semibold">Ver Zapatos</a>
+              </div>
+            </div>
+
+            <!-- Slide 4: Accesorios -->
+            <div class="carousel-item">
+              <img src="images/slide4.png" class="d-block w-100 cshop-slide-img" alt="Accesorios y complementos destacados en CSHOP" width="1584" height="672">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                <h2>Accesorios Clave para Completar tu Look</h2>
+                <p>Complementos versátiles que marcan la diferencia en cualquier outfit.</p>
+                <a href="views/productos.html#accesorios" class="btn btn-light btn-sm fw-semibold">Ver Accesorios</a>
+              </div>
+            </div>
+
+            <!-- Slide 5: Presupuesto -->
+            <div class="carousel-item">
+              <img src="images/slide5.png" class="d-block w-100 cshop-slide-img" alt="Solicita tu presupuesto rápido en CSHOP" width="1584" height="672">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                <h2>Presupuesto Rápido y Atención Directa</h2>
+                <p>Pide tu presupuesto a medida o contáctanos para resolver tus dudas.</p>
+                <a href="views/presupuesto.html" class="btn btn-success btn-sm fw-semibold">Pedir presupuesto</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCSHOP" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCSHOP" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="container my-4 px-4 px-md-5">
+        <!-- 2. Sección compuesta por 4 cards -->
+        <section aria-label="Selección destacada CSHOP" class="mb-5">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="images/card1.jpg" class="card-img-top" alt="Ropa CSHOP" width="2350" height="4000">
+                <div class="card-body">
+                  <h2 class="card-title h5">Ropa</h2>
+                  <p class="card-text">Tendencias actuales y prendas versátiles para tu día a día.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="images/card2.jpg" class="card-img-top" alt="Zapatos CSHOP" width="4160" height="6240">
+                <div class="card-body">
+                  <h2 class="card-title h5">Zapatos</h2>
+                  <p class="card-text">Calzado urbano y modelos destacados para cada temporada.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="images/card3.jpg" class="card-img-top" alt="Accesorios CSHOP" width="4277" height="6416">
+                <div class="card-body">
+                  <h2 class="card-title h5">Accesorios</h2>
+                  <p class="card-text">Complementos que aportan carácter a cualquier outfit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="images/card4.jpg" class="card-img-top" alt="Asesoría CSHOP" width="2160" height="3840">
+                <div class="card-body">
+                  <h2 class="card-title h5">Asesoría</h2>
+                  <p class="card-text">Recomendaciones personalizadas para combinar tu estilo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Sección compuesta por un elemento de Bootstrap a elección (Acordeón) -->
+        <section aria-label="Información adicional CSHOP" class="mb-5">
+          <div class="accordion shadow-sm" id="accordionCSHOP">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingCSHOPOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSHOPOne" aria-expanded="true" aria-controls="collapseCSHOPOne">
+                  Estilo y novedades en CSHOP
+                </button>
+              </h2>
+              <div id="collapseCSHOPOne" class="accordion-collapse collapse show" role="region" aria-labelledby="headingCSHOPOne" data-bs-parent="#accordionCSHOP">
+                <div class="accordion-body">
+                  Descubre nuestras propuestas en moda urbana, calzado y complementos con atención directa.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingCSHOPTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSHOPTwo" aria-expanded="false" aria-controls="collapseCSHOPTwo">
+                  Atención y contacto
+                </button>
+              </h2>
+              <div id="collapseCSHOPTwo" class="accordion-collapse collapse" role="region" aria-labelledby="headingCSHOPTwo" data-bs-parent="#accordionCSHOP">
+                <div class="accordion-body">
+                  Estamos en Calle Compostela, 5, 15004 A Coruña y en el teléfono 901 150 543.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Banner imagen y vídeo -->
+        <section aria-label="Destacado multimedia CSHOP" class="mb-5">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-md-6">
+              <img src="images/banner1.png" class="img-fluid rounded shadow" alt="Banner principal" width="1536" height="1024">
+            </div>
+
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9 rounded shadow">
+                <iframe src="https://www.youtube.com/embed/VkZ7eISancM" title="Video CSHOP" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="text-center mb-4">Las 'chunky sneakers' que llevarás esta temporada ya fueron tendencia hace 20 años.</h2>
+
+          <div class="cshop-article-text mx-auto">
+            <p class="text_column">Las zapatillas han cambiado. Si antes buscábamos la sencillez y la máxima versatilidad que nos daban deportivas como las adidas Stan Smith, adidas Superstar o Nike Cortez, ahora preferimos todo lo contrario. Diseños recargados, nada discretos, coloridos y con suelas gruesas. Un calzado que choca a primera vista por su apariencia poco delicada, pero que termina enamorando cuando nos fijamos en la multitud de detalles.</p>
+
+            <p class="text_column">Otra forma de llamar a las chunky sneakers (literalmente, zapatillas robustas) es dad shoes. Vendría a hacer referencia al calzado de nuestros padres. ¿La razón? ¡Pues porque seguro que tu padre llevaba este tipo de zapatillas cuando era joven! Y es que esta nueva tendencia no es tan nueva como creemos, ya que la principal inspiración está en los años 80 y 90.</p>
+
+            <p class="text_column">En resumen, la idea es recuperar la estética de las deportivas más vistosas, llamativas y locas de hace unas décadas. Romper con las normas establecidas, darle un aire nuevo al streetwear y, sobre todo, convertir nuestras zapatillas en el centro de todas las miradas. En el eje principal de cada uno de nuestros looks.</p>
+
+            <p class="text_column">Esta corriente empezó a hacer ruido a mediados del 2017. Para muchos, terminó de asentarse del todo cuando la marca Balenciaga presentó sus Triple S. Ahora las chunky sneakers se han convertido en la tendencia principal del calzado urbano del 2018. ¡Y está claro que han llegado para quedarse! Es una moda que sigue creciendo y que actualmente cuenta con mucha variedad de modelos donde elegir.</p>
+
+            <p class="text_column">Además, cada marca le está dando su propio toque para reinterpretar a su manera este nuevo estilo de zapatillas. En JD Sports tienes una colección dedicada a las chunky sneakers donde puedes echarle un vistazo a todos los modelos, pero aquí vamos a centrarnos en los mejores para que los conozcas un poco más.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="text-center mt-5 footer-bg">
+      <div class="container-fluid p-4">
+        <div class="container">
+          <div class="row">
+            <!-- Enlaces rápidos -->
+            <div class="footer-col">
+              <p class="h5 text-uppercase mb-3">Información</p>
+              <ul class="list-unstyled">
+                <li><a href="#" class="btn-link">Trabajar en CSHOP</a></li>
+                <li><a href="#" class="btn-link">Acerca del grupo CSHOP</a></li>
+                <li><a href="#" class="btn-link">Nuestra responsabilidad</a></li>
+                <li><a href="#" class="btn-link">Relaciones con inversionistas</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <p class="h5 text-uppercase mb-3">Ayuda</p>
+              <ul class="list-unstyled">
+                <li><a href="#" class="btn-link">Atención al cliente</a></li>
+                <li><a href="#" class="btn-link">Mi cuenta</a></li>
+                <li><a href="#" class="btn-link">Nuestras tiendas</a></li>
+                <li><a href="views/contacto.html" class="btn-link">Contáctanos</a></li>
+              </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-col">
+              <p class="h5 text-uppercase mb-3">Contacto</p>
+              <address>
+                <strong>Venta por teléfono:</strong><br>
+                901 150 543<br>
+                Calle Compostela, 5, 15004 A Coruña
+              </address>
+              <address>
+                <strong>Email:</strong><br>
+                <a href="mailto:cshop@example.com" class="btn-link">cshop@example.com</a>
+              </address>
+
+              <p class="h5 text-uppercase mb-2 mt-3">Síguenos</p>
+              <div class="social-links">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><img src="images/youtube.svg" alt="Youtube" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><img src="images/linkedin.svg" alt="Linkedin" class="social-icon" width="24" height="24" loading="lazy"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-col newsletter-box">
+            <p class="h5 text-uppercase mb-3">Newsletter</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Tu correo electrónico" required>
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <div class="text-center p-3">
+              Copyright © CSHOP 2025. Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

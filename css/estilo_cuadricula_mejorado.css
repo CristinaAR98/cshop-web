@@ -1,0 +1,40 @@
+
+
+
+
+
+/* Estilos para la cuadrícula */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas de tamaño igual */
+    grid-template-rows: repeat(3, auto); /* 3 filas con altura automática */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Estilos de los productos individuales */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ajusta al tamaño de la cuadrícula */
+    max-width: 200px;
+}
+
+/* Imágenes dentro de la cuadrícula */
+.producto img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Texto del producto */
+.producto p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+

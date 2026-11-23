@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="ropa, moda, CSHOP, estilo, accesorios, tendencias, ropa urbana, asesoría de estilo, outfit, ropa para hombre, ropa para mujer, tienda de ropa">
+    <meta name="description" content="CSHOP - Ropa y complementos · Productos">
+    <meta name="author" content="CSHOP">
+    <title>CSHOP - Productos</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="CSHOP - Ropa y complementos">
+    <meta property="og:description" content="Explora nuestra línea de ropa y complementos con CSHOP. Recibe asesoría personalizada para destacar en cada ocasión.">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSHOP - Productos">
+    <meta name="twitter:description" content="Explora nuestra línea de ropa y complementos con CSHOP.">
+
+    <!-- Favicon e iconos (ruta relativa desde /views/) -->
+    <link rel="icon" href="../images/fevicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.ico">
+    <link rel="manifest" href="../images/site.webmanifest">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS e iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS del proyecto (ruta relativa desde /views/) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo_cuadricula_mejorado.css">
+    <link rel="stylesheet" href="../css/productos.css">
+  </head>
+
+  <body>
+    <header class="navbar-block">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">CSHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Menú de navegación principal -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" aria-current="page" href="productos.html" id="productosDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                  <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
+                  <li><a class="dropdown-item" href="productos.html#ropa">Ropa</a></li>
+                  <li><a class="dropdown-item" href="productos.html#zapatos">Zapatos</a></li>
+                  <li><a class="dropdown-item" href="productos.html#accesorios">Accesorios</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="presupuesto.html">Presupuesto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <!-- Buscador -->
+            <form class="d-flex me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+
+            <!-- Selector de Idiomas con Bandera -->
+            <div class="d-flex align-items-center gap-3">
+              <!-- Español -->
+              <div class="language-option d-inline-flex align-items-center gap-1">
+                <a
+                  href="https://translate.google.com/?sl=en&tl=es&text=Hello"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Traducir al Español"
+                >
+                  <img
+                    src="https://flagsapi.com/ES/flat/24.png"
+                    alt="Español"
+                    width="24"
+                    height="24"
+                  >
+                </a>
+                <small class="text-light">Español</small>
+              </div>
+
+              <!-- Inglés -->
+              <div class="language-option d-inline-flex align-items-center gap-1">
+                <a
+                  href="https://translate.google.com/?sl=es&tl=en&text=Hola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Translate to English"
+                >
+                  <img
+                    src="https://flagsapi.com/US/flat/24.png"
+                    alt="English"
+                    width="24"
+                    height="24"
+                  >
+                </a>
+                <small class="text-light">English</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-block">
+      <!-- Contenido Principal -->
+      <main class="container mt-4">
+        <h1 class="mb-4">Galería de Productos</h1>
+
+        <!-- Pestañas de navegación (Orden: 1. Ropa, 2. Zapatos, 3. Accesorios) -->
+        <ul class="nav nav-tabs mb-4" id="productTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="ropa-tab" data-bs-toggle="tab" data-bs-target="#ropa" type="button" role="tab" aria-controls="ropa" aria-selected="true">
+              <i class="fas fa-tshirt me-2" aria-hidden="true"></i> Ropa
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="zapatos-tab" data-bs-toggle="tab" data-bs-target="#zapatos" type="button" role="tab" aria-controls="zapatos" aria-selected="false">
+              <i class="fas fa-shoe-prints me-2" aria-hidden="true"></i> Zapatos
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="accesorios-tab" data-bs-toggle="tab" data-bs-target="#accesorios" type="button" role="tab" aria-controls="accesorios" aria-selected="false">
+              <i class="far fa-gem me-2" aria-hidden="true"></i> Accesorios
+            </button>
+          </li>
+        </ul>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content" id="productTabsContent">
+          <!-- 1. Pestaña Ropa (6 productos) -->
+          <div class="tab-pane fade show active" id="ropa" role="tabpanel" aria-labelledby="ropa-tab">
+            <div class="container mt-4">
+              <div class="row">
+                <!-- Producto 1: Camiseta Básica Blanca -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-20%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/ropa-camiseta-blanca.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Camiseta Básica Blanca"
+                        width="1800"
+                        height="2600"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Ropa • Básicos</small>
+                      <p class="h5 card-title mb-2">Camiseta Básica Blanca</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">12.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">16.25€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(82)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-bolt me-1" aria-hidden="true"></i> Envío express
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 2: Jeans Ajustados -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-15%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/ropa-jeans-ajustados.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Jeans Ajustados"
+                        width="540"
+                        height="675"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Ropa • Denim</small>
+                      <p class="h5 card-title mb-2">Jeans Ajustados</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">29.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">35.29€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(110)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-gem me-1" aria-hidden="true"></i> Tejido elástico
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 3: Sudadera con Capucha -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-10%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/ropa-sudadera-capucha.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Sudadera con Capucha"
+                        width="1000"
+                        height="1250"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Ropa • Urbano</small>
+                      <p class="h5 card-title mb-2">Sudadera con Capucha</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">39.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">44.45€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(142)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-feather me-1" aria-hidden="true"></i> Interior perchado
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 4: Camisa de Cuadros -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-25%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/ropa-camisa-cuadros.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Camisa de Cuadros"
+                        width="500"
+                        height="625"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Ropa • Camisería</small>
+                      <p class="h5 card-title mb-2">Camisa de Cuadros</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">24.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">33.30€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(59)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-leaf me-1" aria-hidden="true"></i> Algodón 100%
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 5: Chaqueta Casual -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-success position-absolute top-0 end-0 m-2">Nuevo</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/ropa-chaqueta-casual.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Chaqueta Casual CSHOP"
+                        width="667"
+                        height="1000"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Ropa • Abrigos</small>
+                      <p class="h5 card-title mb-2">Chaqueta Casual CSHOP</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">59.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(47)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-bolt me-1" aria-hidden="true"></i> Envío express
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 6: Falda Larga Estampada -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-18%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/ropa-falda-estampada.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Falda Larga Estampada"
+                        width="3080"
+                        height="4620"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Ropa • Mujer</small>
+                      <p class="h5 card-title mb-2">Falda Larga Estampada</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">34.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">42.65€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="fas fa-star" aria-hidden="true"></i>
+                          <i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(68)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-wind me-1" aria-hidden="true"></i> Caída fluida
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Pestaña Zapatos (6 productos) -->
+          <div class="tab-pane fade" id="zapatos" role="tabpanel" aria-labelledby="zapatos-tab">
+            <div class="container mt-4">
+              <div class="row">
+                <!-- Producto 1: Running Pro XT-200 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-success position-absolute top-0 end-0 m-2">Nuevo</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/zapato-running-pro.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Running Pro XT-200"
+                        width="1919"
+                        height="2447"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Zapatos • Hombre</small>
+                      <p class="h5 card-title mb-2">Running Pro XT-200</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">89.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(64)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-bolt me-1" aria-hidden="true"></i> Envío express
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 2: Oxford Premium -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-30%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/zapato-oxford-premium.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Oxford Premium"
+                        width="823"
+                        height="1235"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Zapatos • Formal</small>
+                      <p class="h5 card-title mb-2">Oxford Premium</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">69.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">99.99€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(128)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-gem me-1" aria-hidden="true"></i> Cuero genuino
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 3: Comfort Plus -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/botin-valentina-negro.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Comfort Plus"
+                        width="420"
+                        height="420"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Zapatos • Mujer</small>
+                      <p class="h5 card-title mb-2">Comfort Plus</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">39.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(42)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-leaf me-1" aria-hidden="true"></i> Materiales ecológicos
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 4: Ranger Leather -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-info position-absolute top-0 end-0 m-2">Limited</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/zapato-botas-ranger.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Ranger Leather"
+                        width="600"
+                        height="800"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Zapatos • Unisex</small>
+                      <p class="h5 card-title mb-2">Ranger Leather</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">129.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(87)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-shield-alt me-1" aria-hidden="true"></i> Impermeables
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 5: Urban Fit 3.0 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Últimos</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/zapato-urban-fit.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Urban Fit 3.0"
+                        width="750"
+                        height="1000"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Zapatos • Hombre</small>
+                      <p class="h5 card-title mb-2">Urban Fit 3.0</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">59.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(56)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-weight me-1" aria-hidden="true"></i> Ultra ligeras
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 6: Explorer Kids -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/zapato-explorer-kids.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Explorer Kids"
+                        width="4000"
+                        height="4000"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Zapatos • Infantil</small>
+                      <p class="h5 card-title mb-2">Explorer Kids</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">34.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(203)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-child me-1" aria-hidden="true"></i> Antideslizantes
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Pestaña Accesorios (6 productos) -->
+          <div class="tab-pane fade" id="accesorios" role="tabpanel" aria-labelledby="accesorios-tab">
+            <div class="container mt-4">
+              <div class="row">
+                <!-- Producto 1: Collar Elegante -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-success position-absolute top-0 end-0 m-2">Nuevo</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/accesorio-collar-elegante.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Collar Elegante"
+                        width="721"
+                        height="729"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Accesorios</small>
+                      <p class="h5 card-title mb-2">Collar Elegante</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">29.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(38)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-bolt me-1" aria-hidden="true"></i> Envío express
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 2: Gafas de Sol Urbanas -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">-20%</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/accesorio-gafas-sol.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Gafas de Sol Urbanas"
+                        width="1140"
+                        height="1140"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Accesorios</small>
+                      <p class="h5 card-title mb-2">Gafas de Sol Urbanas</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                          <span class="h5 text-primary">23.99€</span>
+                          <small class="text-decoration-line-through text-muted ms-2">29.99€</small>
+                        </div>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(94)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-shield-alt me-1" aria-hidden="true"></i> Protección UV400
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 3: Cinturón Clásico de Piel -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/accesorio-cinturon-cuero.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Cinturón Clásico de Piel"
+                        width="794"
+                        height="596"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Accesorios</small>
+                      <p class="h5 card-title mb-2">Cinturón Clásico de Piel</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">34.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(51)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-gem me-1" aria-hidden="true"></i> Acabado resistente
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 4: Mochila Urbana CSHOP -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-info position-absolute top-0 end-0 m-2">Limited</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/accesorio-mochila-urbana.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Mochila Urbana CSHOP"
+                        width="530"
+                        height="530"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Accesorios</small>
+                      <p class="h5 card-title mb-2">Mochila Urbana CSHOP</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">49.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(76)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-laptop me-1" aria-hidden="true"></i> Compartimento acolchado
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 5: Gorra Minimalista -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Últimos</span>
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/accesorio-gorra-minimal.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Gorra Minimalista"
+                        width="794"
+                        height="794"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Accesorios</small>
+                      <p class="h5 card-title mb-2">Gorra Minimalista</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">19.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(45)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-leaf me-1" aria-hidden="true"></i> Algodón transpirable
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Producto 6: Bufanda Tejida Suave -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 product-card">
+                    <div class="product-img-container position-relative overflow-hidden">
+                      <img
+                        src="../images/accesorio-bufanda-suave.jpg"
+                        class="card-img-top img-fluid product-img"
+                        alt="Bufanda Tejida Suave"
+                        width="768"
+                        height="960"
+                      >
+                      <div class="product-overlay d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-light btn-quick-view">
+                          <i class="fas fa-eye me-2" aria-hidden="true"></i>Vista Rápida
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <small class="text-muted d-block mb-1">Accesorios</small>
+                      <p class="h5 card-title mb-2">Bufanda Tejida Suave</p>
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="h5 text-primary">24.99€</span>
+                        <div class="rating small text-warning">
+                          <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                          <small class="text-muted ms-1">(63)</small>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <button type="button" class="btn btn-outline-secondary btn-sm flex-grow-1">
+                          <i class="far fa-heart me-1" aria-hidden="true"></i> Favoritos
+                        </button>
+                        <button type="button" class="btn btn-dark btn-sm flex-grow-1">
+                          <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i> Añadir
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pt-0">
+                      <small class="text-success">
+                        <i class="fas fa-feather me-1" aria-hidden="true"></i> Tacto cálido
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="text-center mt-5 footer-bg">
+      <div class="container-fluid p-4">
+        <div class="container">
+          <div class="row">
+            <!-- Enlaces rápidos -->
+            <div class="footer-col">
+              <p class="h5 text-uppercase mb-3">Información</p>
+              <ul class="list-unstyled">
+                <li><a href="#" class="btn-link">Trabajar en CSHOP</a></li>
+                <li><a href="#" class="btn-link">Acerca del grupo CSHOP</a></li>
+                <li><a href="#" class="btn-link">Nuestra responsabilidad</a></li>
+                <li><a href="#" class="btn-link">Relaciones con inversionistas</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <p class="h5 text-uppercase mb-3">Ayuda</p>
+              <ul class="list-unstyled">
+                <li><a href="#" class="btn-link">Atención al cliente</a></li>
+                <li><a href="#" class="btn-link">Mi cuenta</a></li>
+                <li><a href="#" class="btn-link">Nuestras tiendas</a></li>
+                <li><a href="contacto.html" class="btn-link">Contáctanos</a></li>
+              </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-col">
+              <p class="h5 text-uppercase mb-3">Contacto</p>
+              <address>
+                <strong>Venta por teléfono:</strong><br>
+                901 150 543<br>
+                Calle Compostela, 5, 15004 A Coruña
+              </address>
+              <address>
+                <strong>Email:</strong><br>
+                <a href="mailto:cshop@example.com" class="btn-link">cshop@example.com</a>
+              </address>
+
+              <p class="h5 text-uppercase mb-2 mt-3">Síguenos</p>
+              <div class="social-links">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../images/instagram.svg" alt="Instagram" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../images/facebook.svg" alt="Facebook" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="../images/twitter.svg" alt="Twitter" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><img src="../images/youtube.svg" alt="Youtube" class="social-icon" width="24" height="24" loading="lazy"></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><img src="../images/linkedin.svg" alt="Linkedin" class="social-icon" width="24" height="24" loading="lazy"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-col newsletter-box">
+            <p class="h5 text-uppercase mb-3">Newsletter</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Tu correo electrónico" required>
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <div class="text-center p-3">
+              Copyright © CSHOP 2025. Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

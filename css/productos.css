@@ -1,0 +1,272 @@
+/* === Variables === */
+:root {
+  --color-primary: #C5FF3F;
+  --color-secondary: #1D1D1D;
+  --color-light: #F9F9F9;
+  --color-dark:  #1D1D1D;
+  --color-accent: #00E5FF;
+  --color-neutral: #E0E0E0;
+}
+
+/* === Global Styles === */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+a:hover {
+  color: var(--color-accent);
+  box-shadow: 0 2px 8px #7F40FF;
+}
+
+/* === Bloque visual diferenciado del contenido === */
+.main-block {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  max-width: 1200px;
+  box-shadow: 0 2px 8px #7F40FF;
+}
+
+/* === Navbar Diferenciado === */
+.navbar-block {
+  background-color: #C5FF3F;
+  box-shadow: 0 2px 8px #7F40FF;
+  padding-bottom: 10px;
+}
+
+/* === Carrusel === */
+.carousel-container {
+  margin-top: 40px;
+  box-shadow: 0 2px 8px #7F40FF;
+}
+
+/* === Main Content === */
+main,
+main.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px #7F40FF;
+}
+
+/* === Footer Styles === */
+.footer-bg {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Footer horizontal layout */
+.footer-bg .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 15px;
+  margin-bottom: 16px;
+}
+
+.footer-col h5 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-secondary);
+}
+
+ul.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 8px;
+}
+
+.footer-bg a,
+.footer-bg .btn-link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: none;
+}
+
+.footer-bg a:hover,
+.footer-bg .btn-link:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  box-shadow: none;
+}
+
+/* Newsletter */
+.newsletter-box {
+  margin-top: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 8px 12px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 4px;
+  min-width: 250px;
+  background-color: #ffffff;
+  color: var(--color-secondary);
+}
+
+.newsletter-form button {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--color-dark);
+  transform: translateY(-1px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  font-size: 0.85rem;
+  max-width: 1140px;
+  margin: 16px auto 0;
+  background-color: #ffffff;
+  color: var(--color-secondary);
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 8px #7F40FF;
+}
+
+/* === Social Icons (tamaño unificado grande) === */
+.social-links {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: none;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  filter: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+  filter: none;
+}
+
+/* === Idiomas y redes sociales en cabecera === */
+.social-language-group small {
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  margin-top: 4px;
+  display: block;
+}
+
+.idiomas img,
+.redes img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.idiomas img:hover,
+.redes img:hover {
+  transform: scale(1.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .main-block {
+    padding: 20px 15px;
+    margin: 20px;
+  }
+
+  .footer-bg .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    padding-bottom: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Forzar encuadre cuadrado 1:1 en las fotos de producto */
+.product-img-container {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.product-img-container .product-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center top; /* Ideal para prendas y modelos sin cortar cabezas */
+}
